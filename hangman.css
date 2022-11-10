@@ -1,0 +1,119 @@
+body {
+   background-image: url("spongebob.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+  max-width: 610px;
+  margin: auto;
+  text-align: center;
+}
+
+h1, h5 {
+    text-align: center;
+    color:darkred;
+    text-align: center;
+  }
+h1 {
+    padding-top: 33px;
+    font-size: 40px;
+}
+.win {
+  color: white;
+  background-color: rgb(33, 243, 226);
+  text-align: center;
+}
+
+.loss {
+    color: white;
+    background-color:rgb(33, 243, 226);
+    align-items: center;
+  }
+
+#word {
+  letter-spacing: 10px;
+  align-items: center;
+  text-align: center;
+  font-size: 24pt;
+  color:rgb(33, 243, 226);
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace
+}
+  
+#guesses {
+    text-align: center;
+    align-items: center;
+    font-size: 16pt;
+    color:rgb(33, 243, 226);
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+  }
+
+
+  
+  .guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+@media only screen and (min-device-width: 375px ) and (max-device-width: 667px) {
+    #guesses {
+    text-align: center;
+    font-size: 24pt;
+    color: rgb(255, 255, 153);
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+  }
+
+  .guess {
+    padding: 30px;
+    display: inline-block;
+    border: 2px solid  darkred;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+#guessBox {
+    height: 40px;
+    border-radius: 10px;
+    padding-top: 5px;
+    font-size: 18pt;
+    width: 200px;
+    padding-left: 10px;
+    opacity: .8;
+}
+
+  /* Buttons */
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color:darkred;
+    background-color: rgb(33, 243, 226);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 9px #999;
+    opacity: .8;
+  }
+  
+  .button:hover {background-color: rgb(33, 243, 226)}
+  
+  .button:active {
+    background-color:  rgb(4, 164, 153);
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+  }
